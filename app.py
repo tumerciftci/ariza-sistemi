@@ -128,7 +128,8 @@ if __name__ == '__main__':
             db.session.add(User(username='admin', password=generate_password_hash('1234')))
             db.session.commit()
 
-    app.run(debug=True)
+  if __name__ == "__main__":
+    app.run()
 
 # ==============================
 # templates/dashboard.html (PERSONEL GRAFİĞİ EKLENDİ)
