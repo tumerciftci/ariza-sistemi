@@ -128,8 +128,11 @@ if __name__ == '__main__':
             db.session.add(User(username='admin', password=generate_password_hash('1234')))
             db.session.commit()
 
-  if __name__ == "__main__":
-    app.run()
+import os
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
 
 # ==============================
 # templates/dashboard.html (PERSONEL GRAFİĞİ EKLENDİ)
