@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yeni Arıza</title>
+</head>
+<body>
+
+<h2>Yeni Arıza</h2>
+
+<form method="post">
+    <input name="cihaz" placeholder="Cihaz"><br>
+    <input name="aciklama" placeholder="Açıklama"><br>
+    <input name="personel" placeholder="Personel"><br>
+    <button>Kaydet</button>
+</form>
+
+</body>
+</html>
