@@ -24,7 +24,6 @@
             <th>Cihaz</th>
             <th>Personel</th>
             <th>Durum</th>
-            <th>İşlem</th>
         </tr>
     </thead>
 
@@ -34,18 +33,7 @@
             <td>{{a.id}}</td>
             <td>{{a.cihaz}}</td>
             <td>{{a.personel}}</td>
-
-            <td>
-                {% if a.durum == "Açık" %}
-                    <span class="badge bg-danger">Açık</span>
-                {% else %}
-                    <span class="badge bg-success">Kapalı</span>
-                {% endif %}
-            </td>
-
-            <td>
-                <a href="/kapat/{{a.id}}" class="btn btn-sm btn-success">Kapat</a>
-            </td>
+            <td>{{a.durum}}</td>
         </tr>
     {% endfor %}
     </tbody>
